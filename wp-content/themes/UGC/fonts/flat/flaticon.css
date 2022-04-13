@@ -1,0 +1,85 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/03/2018 13:55
+  	*/
+
+    @font-face {
+      font-family: "Flaticon";
+      src: url("Flaticon.eot");
+      src: url("Flaticond41d.eot?#iefix") format("embedded-opentype"),
+           url("Flaticon.woff") format("woff"),
+           url("Flaticon.ttf") format("truetype"),
+           url("Flaticon.svg#Flaticon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: "Flaticon";
+        src: url("Flaticon.svg#Flaticon") format("svg");
+      }
+    }
+    
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+      font-family: Flaticon;
+      font-size: 30px;
+      font-style: normal;
+      margin-left: 0;
+    }
+    
+    .flaticon-message-closed-envelope:before { content: "\f100"; }
+    .flaticon-maps-and-flags:before { content: "\f101"; }
+    .flaticon-fire-extinguisher:before { content: "\f102"; }
+    .flaticon-tap:before { content: "\f103"; }
+    .flaticon-driver:before { content: "\f104"; }
+    .flaticon-arrows:before { float: left;
+      line-height: 20px;
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 10px;
+      height: 1px;
+      background: #5b5b5b;
+      width: 33px;}
+      .flaticon-arrows:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 5px;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-right: 7px solid #5b5b5b;
+        border-bottom: 6px solid transparent;
+      }
+    .flaticon-arrows-1:before {
+      float: left;
+      line-height: 20px;
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 10px;
+      height: 1px;
+      background: #5b5b5b;
+      width: 33px;
+      }
+    
+      .flaticon-arrows-1:after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 5px;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-left: 7px solid #5b5b5b;
+        border-bottom: 6px solid transparent;
+    }
+    .flaticon-sedan-car-front:before { content: "\f107"; }
+    .flaticon-power-cord:before { content: "\f108"; }
+    .flaticon-settings:before { content: "\f109"; }
+    .flaticon-international-travel-and-tourism:before { content: "\f10a"; }
+    .flaticon-apartment:before { content: "\f10b"; }
+    .flaticon-delivery-truck:before { content: "\f10c"; }
