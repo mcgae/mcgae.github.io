@@ -4,7 +4,7 @@
 
   
 <head>
-<link rel="icon" type="image/ico" href="mak-logo-rbg-p.png"/>
+
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,26 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>MAK COOL GUARD GENERAL TRADING S P LLC</title>
+    <link rel="icon" href="mak-logo-rbg-p.png">
+ <link rel="shortcut icon" href="mak-logo-rbg-p.png">
 
+ <link rel="apple-touch-icon" sizes="57x57" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="60x60" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="72x72" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="76x76" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="114x114" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="120x120" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="144x144" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="152x152" href="mak-logo-rbg-p.png">
+<link rel="apple-touch-icon" sizes="180x180" href="mak-logo-rbg-p.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="mak-logo-rbg-p.png">
+<link rel="icon" type="image/png" sizes="32x32" href="mak-logo-rbg-p.png">
+<link rel="icon" type="image/png" sizes="96x96" href="mak-logo-rbg-p.png">
+<link rel="icon" type="image/png" sizes="16x16" href="mak-logo-rbg-p.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="mak-logo-rbg-p.png">
+<meta name="theme-color" content="#ffffff">
 
 
   
@@ -99,20 +118,25 @@ img.emoji {
 </script><style type="text/css">.broken_link, a.broken_link {
 	text-decoration: line-through;
 }</style>
-  <!--[if IE 9]>
+ 
 
-<link rel="stylesheet" href="http://ugc.ae/wp-content/themes/UGC/css/ie-9.css" media="screen" type="text/css" />
 
-<![endif]-->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121541838-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  var isNS = (navigator.appName == "PN") ? 1 : 0;
+  if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+  function mischandler(){
+  return false;
+  }
+  function mousehandler(e){
+  var myevent = (isNS) ? e : event;
+  var eventbutton = (isNS) ? myevent.which : myevent.button;
+  if((eventbutton==2)||(eventbutton==3)) return false;
+  }
+  document.oncontextmenu = mischandler;
+  document.onmousedown = mousehandler;
+  document.onmouseup = mousehandler;
+  </script>
 
-  gtag('config', 'UA-121541838-1');
-</script>
   </head>
 
   <body>
@@ -830,38 +854,7 @@ Privacy Policy | Terms &amp; Conditions
 
 </footer> 
 <meta http-equiv="imagetoolbar" content="no"><!-- disable image toolbar (if any) -->
-<script type="text/javascript">
-    /*<![CDATA[*/
-    document.oncontextmenu = function() {
-        return false;
-    };
-    document.onselectstart = function() {
-        if (event.srcElement.type != "text" && event.srcElement.type != "textarea" && event.srcElement.type != "password") {
-            return false;
-        }
-        else {
-            return true;
-        }
-    };
-    if (window.sidebar) {
-        document.onmousedown = function(e) {
-            var obj = e.target;
-            if (obj.tagName.toUpperCase() == 'SELECT'
-                    || obj.tagName.toUpperCase() == "INPUT"
-                    || obj.tagName.toUpperCase() == "TEXTAREA"
-                    || obj.tagName.toUpperCase() == "PASSWORD") {
-                return true;
-            }
-            else {
-                return false;
-            }
-        };
-    }
-    document.ondragstart = function() {
-        return false;
-    };
-    /*]]>*/
-</script>
+
 
 <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scriptsaead.js?ver=5.0.3'></script>
 
